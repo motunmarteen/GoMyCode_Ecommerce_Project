@@ -213,7 +213,7 @@ let products = [
       "https://images.unsplash.com/photo-1627140290942-7c8f9f56e870?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFtYm9yZ2hpbmklMjB1cnVzfGVufDB8fDB8fHww",
     nameOfProduct: "Yoruba Demon Fila",
     price: 15000,
-    isLiked: false,git 
+    isLiked: false,
     quantity: 0,
   },
 ];
