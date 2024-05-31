@@ -218,7 +218,7 @@ let products = [
   },
 ];
 
-const cardContainer = document.getElementById("list-products");
+const cardDiv = document.getElementById("list-products");
 const totalBody = document.querySelector(".total");
 let sum = 0;
 
@@ -231,7 +231,7 @@ const updatePrice = () => {
 // This function increases the quantity of a products to be bought on the webpage by one and also clear the current product list display, it updates the total price and updates the UI to reflect the changes made on the webpage.
 const incrementQuantity = (product) => {
   product.quantity++;
-  cardContainer.innerHTML = "";
+  cardDiv.innerHTML = "";
   updatePrice();
   updateUi();
 };
@@ -241,7 +241,7 @@ const decrementQuantity = (product) => {
   // An if statement to check if the quantity is greater than zero before decreasing
   if (product.quantity > 0) {
     product.quantity--;
-    cardContainer.innerHTML = "";
+    cardDiv.innerHTML = "";
     updatePrice();
     updateUi();
   }
@@ -250,7 +250,7 @@ const decrementQuantity = (product) => {
 // This function deletes the quantity and price of a products selected to be bought on the webpage and also clear the current product list display, it updates the total price and updates the UI to reflect the changes made on the webpage.
 const deleteProduct = (product) => {
     product.quantity = 0;
-    cardContainer.innerHTML = "";
+    cardDiv.innerHTML = "";
     updatePrice();
     updateUi();
 };
@@ -303,7 +303,7 @@ function updateUi() {
     });
 
     // Append the product card to the card container
-    cardContainer.appendChild(cardBody);
+    cardDiv.appendChild(cardBody);
   }
 }
 
